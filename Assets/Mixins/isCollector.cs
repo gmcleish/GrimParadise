@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class isCollector : MonoBehaviour {
+public class isCollector : Mixin {
 
 	// Use this for initialization
 	void Start () {
