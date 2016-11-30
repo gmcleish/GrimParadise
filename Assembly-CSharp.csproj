@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{1EE840C1-B0E6-AE48-FA7F-AE4FED58BDFE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -23,6 +25,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -31,6 +34,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -45,41 +49,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Data\Data.cs" />
-     <Compile Include="Assets\Data\FloatData.cs" />
-     <Compile Include="Assets\Data\IntData.cs" />
-     <Compile Include="Assets\Mixins\Mixin.cs" />
-     <Compile Include="Assets\Mixins\hasAnimationOverride.cs" />
-     <Compile Include="Assets\Mixins\isAltar.cs" />
-     <Compile Include="Assets\Mixins\isClickable.cs" />
-     <Compile Include="Assets\Mixins\isCollector.cs" />
-     <Compile Include="Assets\Mixins\isConsumable.cs" />
-     <Compile Include="Assets\Mixins\isEnchantable.cs" />
-     <Compile Include="Assets\Mixins\isEnchanter.cs" />
-     <Compile Include="Assets\Mixins\isEnemy.cs" />
-     <Compile Include="Assets\Mixins\isEquipSlot.cs" />
-     <Compile Include="Assets\Mixins\isEquipable.cs" />
-     <Compile Include="Assets\Mixins\isInventory.cs" />
-     <Compile Include="Assets\Mixins\isMatModifier.cs" />
-     <Compile Include="Assets\Mixins\isPlayer.cs" />
-     <Compile Include="Assets\Mixins\isProjectile.cs" />
-     <Compile Include="Assets\Mixins\isSpawner.cs" />
-     <Compile Include="Assets\Mixins\isStoreable.cs" />
-     <Compile Include="Assets\Mixins\isTouchable.cs" />
-     <Compile Include="Assets\Mixins\isUsable.cs" />
-     <Compile Include="Assets\Scripts\HeroCtrl.cs" />
-     <Compile Include="Assets\Scripts\IKHandler.cs" />
-     <Compile Include="Assets\Scripts\LevelMgr.cs" />
-     <Compile Include="Assets\Scripts\ScoreMgr.cs" />
-     <Compile Include="Assets\Scripts\SmoothFollow.cs" />
-     <Compile Include="Assets\Scripts\SoundMgr.cs" />
-     <Compile Include="Assets\Scripts\SpawnMgr.cs" />
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.Networking">
- <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
- </Reference>
+    <Compile Include="Assets\Data\Data.cs" />
+    <Compile Include="Assets\Data\FloatData.cs" />
+    <Compile Include="Assets\Data\IntData.cs" />
+    <Compile Include="Assets\Mixins\Mixin.cs" />
+    <Compile Include="Assets\Mixins\hasAnimationOverride.cs" />
+    <Compile Include="Assets\Mixins\isAltar.cs" />
+    <Compile Include="Assets\Mixins\isClickable.cs" />
+    <Compile Include="Assets\Mixins\isCollector.cs" />
+    <Compile Include="Assets\Mixins\isConsumable.cs" />
+    <Compile Include="Assets\Mixins\isEnchantable.cs" />
+    <Compile Include="Assets\Mixins\isEnchanter.cs" />
+    <Compile Include="Assets\Mixins\isEnemy.cs" />
+    <Compile Include="Assets\Mixins\isEquipSlot.cs" />
+    <Compile Include="Assets\Mixins\isEquipable.cs" />
+    <Compile Include="Assets\Mixins\isInventory.cs" />
+    <Compile Include="Assets\Mixins\isMatModifier.cs" />
+    <Compile Include="Assets\Mixins\isPlayer.cs" />
+    <Compile Include="Assets\Mixins\isProjectile.cs" />
+    <Compile Include="Assets\Mixins\isSpawner.cs" />
+    <Compile Include="Assets\Mixins\isStoreable.cs" />
+    <Compile Include="Assets\Mixins\isTouchable.cs" />
+    <Compile Include="Assets\Mixins\isUsable.cs" />
+    <Compile Include="Assets\Scripts\HeroCtrl.cs" />
+    <Compile Include="Assets\Scripts\IKHandler.cs" />
+    <Compile Include="Assets\Scripts\LevelMgr.cs" />
+    <Compile Include="Assets\Scripts\ScoreMgr.cs" />
+    <Compile Include="Assets\Scripts\SmoothFollow.cs" />
+    <Compile Include="Assets\Scripts\SoundMgr.cs" />
+    <Compile Include="Assets\Scripts\SpawnMgr.cs" />
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
@@ -89,5 +93,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-  
 </Project>
